@@ -54,5 +54,11 @@ namespace BoendekostnadetDesktop
             get { return delaSvaretMed; }
             set { delaSvaretMed = value; }
         }
+        private decimal värdeökningAktier;
+        public decimal VärdeökningAktier
+        {
+            get { return värdeökningAktier; }
+            set { värdeökningAktier = value; }
+        }
     }
 }

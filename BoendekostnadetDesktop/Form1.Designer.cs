@@ -64,11 +64,14 @@ namespace BoendekostnadetDesktop
             this.btnÅterställInställningar = new System.Windows.Forms.Button();
             this.lblInställningar = new System.Windows.Forms.Label();
             this.groupBoxInställningar = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.tbxVärdeökningAktier = new System.Windows.Forms.TextBox();
             this.tabMain.SuspendLayout();
             this.tabBeräkna.SuspendLayout();
             this.groupBoxResultat.SuspendLayout();
             this.groupBoxAnge.SuspendLayout();
             this.tabInställningar.SuspendLayout();
+            this.groupBoxInställningar.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabMain
@@ -405,6 +408,7 @@ namespace BoendekostnadetDesktop
             this.btnÅterställInställningar.TabIndex = 2;
             this.btnÅterställInställningar.Text = "Återställ inställningar";
             this.btnÅterställInställningar.UseVisualStyleBackColor = true;
+            this.btnÅterställInställningar.Click += new System.EventHandler(this.btnÅterställInställningar_Click);
             // 
             // lblInställningar
             // 
@@ -418,12 +422,30 @@ namespace BoendekostnadetDesktop
             // 
             // groupBoxInställningar
             // 
+            this.groupBoxInställningar.Controls.Add(this.tbxVärdeökningAktier);
+            this.groupBoxInställningar.Controls.Add(this.label9);
             this.groupBoxInställningar.Location = new System.Drawing.Point(21, 41);
             this.groupBoxInställningar.Name = "groupBoxInställningar";
             this.groupBoxInställningar.Size = new System.Drawing.Size(723, 334);
             this.groupBoxInställningar.TabIndex = 0;
             this.groupBoxInställningar.TabStop = false;
             this.groupBoxInställningar.Text = "Avancerade inställningar";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(7, 23);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(133, 15);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Årlig värdeökning aktier";
+            // 
+            // tbxVärdeökningAktier
+            // 
+            this.tbxVärdeökningAktier.Location = new System.Drawing.Point(163, 20);
+            this.tbxVärdeökningAktier.Name = "tbxVärdeökningAktier";
+            this.tbxVärdeökningAktier.Size = new System.Drawing.Size(66, 23);
+            this.tbxVärdeökningAktier.TabIndex = 1;
             // 
             // Bostadskostnader
             // 
@@ -442,6 +464,8 @@ namespace BoendekostnadetDesktop
             this.groupBoxAnge.PerformLayout();
             this.tabInställningar.ResumeLayout(false);
             this.tabInställningar.PerformLayout();
+            this.groupBoxInställningar.ResumeLayout(false);
+            this.groupBoxInställningar.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -484,6 +508,8 @@ namespace BoendekostnadetDesktop
         private System.Windows.Forms.RadioButton rbnTusental;
         private System.Windows.Forms.RadioButton rbnKronor;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox tbxVärdeökningAktier;
+        private System.Windows.Forms.Label label9;
     }
 }
 

@@ -16,6 +16,7 @@ namespace BoendekostnadetDesktop
         {
             InitializeComponent();
             ÅterställAnget();
+            ÅterställInställningar();
         }
 
         private void tabMain_SelectedIndexChanged(object sender, EventArgs e)
@@ -56,6 +57,9 @@ namespace BoendekostnadetDesktop
             //Standardparametrar hus
             param.HusPris = HämtaIntParameter(tbxHusPris.Text, "Husets pris", ref resultat);
             param.HusRänta = HämtaDecimalParameter(tbxHusRänta.Text.Replace("%", ""), "Bostadsrättens ränta", ref resultat) / 100;
+
+            //Avancerade inställningar generelt och hyresrätt
+            param.VärdeökningAktier = HämtaDecimalParameter(tbxVärdeökningAktier.Text.Replace("%", ""), "Värdeökningen på aktier", ref resultat) / 100;
 
             return resultat;
         }
@@ -115,6 +119,15 @@ namespace BoendekostnadetDesktop
             tbxHusPris.Text = "3 000 000";
             tbxHusRänta.Text = "1,4%";
             rbnTusental.Checked = true;
+        }
+
+        private void btnÅterställInställningar_Click(object sender, EventArgs e)
+        {
+            ÅterställInställningar();
+        }
+        private void ÅterställInställningar()
+        {
+            tbxVärdeökningAktier.Text = "7%";
         }
     }
 }

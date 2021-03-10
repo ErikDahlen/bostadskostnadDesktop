@@ -79,7 +79,7 @@ namespace BoendekostnadetDesktop
         {
             //sätt generella parametrar
             _antalÅr = param.AntalÅr;
-            _värdeökningAktier = 0.07M;
+            _värdeökningAktier = param.VärdeökningAktier;
             _hävstångAktier = 0.00M; //ange hur många procents hävstång man tar på sina aktier
             _värdeökningBostadsrätt = 0.04M;
             _värdeökningHus = 0.04M;
