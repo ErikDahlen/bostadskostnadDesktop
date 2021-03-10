@@ -1,0 +1,15 @@
+C:\Users\dae\source\repos\BoendekostnadetDesktop\BoendekostnadetDesktop\bin\Debug\netcoreapp3.1\BoendekostnadetDesktop.exe
+C:\Users\dae\source\repos\BoendekostnadetDesktop\BoendekostnadetDesktop\bin\Debug\netcoreapp3.1\BoendekostnadetDesktop.deps.json
+C:\Users\dae\source\repos\BoendekostnadetDesktop\BoendekostnadetDesktop\bin\Debug\netcoreapp3.1\BoendekostnadetDesktop.runtimeconfig.json
+C:\Users\dae\source\repos\BoendekostnadetDesktop\BoendekostnadetDesktop\bin\Debug\netcoreapp3.1\BoendekostnadetDesktop.runtimeconfig.dev.json
+C:\Users\dae\source\repos\BoendekostnadetDesktop\BoendekostnadetDesktop\bin\Debug\netcoreapp3.1\BoendekostnadetDesktop.dll
+C:\Users\dae\source\repos\BoendekostnadetDesktop\BoendekostnadetDesktop\bin\Debug\netcoreapp3.1\BoendekostnadetDesktop.pdb
+C:\Users\dae\source\repos\BoendekostnadetDesktop\BoendekostnadetDesktop\obj\Debug\netcoreapp3.1\BoendekostnadetDesktop.csprojAssemblyReference.cache
+C:\Users\dae\source\repos\BoendekostnadetDesktop\BoendekostnadetDesktop\obj\Debug\netcoreapp3.1\BoendekostnadetDesktop.Bostadskostnader.resources
+C:\Users\dae\source\repos\BoendekostnadetDesktop\BoendekostnadetDesktop\obj\Debug\netcoreapp3.1\BoendekostnadetDesktop.csproj.GenerateResource.cache
+C:\Users\dae\source\repos\BoendekostnadetDesktop\BoendekostnadetDesktop\obj\Debug\netcoreapp3.1\BoendekostnadetDesktop.AssemblyInfoInputs.cache
+C:\Users\dae\source\repos\BoendekostnadetDesktop\BoendekostnadetDesktop\obj\Debug\netcoreapp3.1\BoendekostnadetDesktop.AssemblyInfo.cs
+C:\Users\dae\source\repos\BoendekostnadetDesktop\BoendekostnadetDesktop\obj\Debug\netcoreapp3.1\BoendekostnadetDesktop.csproj.CoreCompileInputs.cache
+C:\Users\dae\source\repos\BoendekostnadetDesktop\BoendekostnadetDesktop\obj\Debug\netcoreapp3.1\BoendekostnadetDesktop.dll
+C:\Users\dae\source\repos\BoendekostnadetDesktop\BoendekostnadetDesktop\obj\Debug\netcoreapp3.1\BoendekostnadetDesktop.pdb
+C:\Users\dae\source\repos\BoendekostnadetDesktop\BoendekostnadetDesktop\obj\Debug\netcoreapp3.1\BoendekostnadetDesktop.genruntimeconfig.cache
