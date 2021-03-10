@@ -74,7 +74,7 @@ namespace BoendekostnadetDesktop
         private decimal HämtaDecimalParameter(string text, string namn, ref bool resultat)
         {
             decimal decimalOut = 0;
-            if (decimal.TryParse(text, out decimalOut))
+            if (decimal.TryParse(text.Replace(" ", ""), out decimalOut))
             {
                 return decimalOut;
             }
@@ -89,7 +89,7 @@ namespace BoendekostnadetDesktop
         private int HämtaIntParameter(string text, string namn, ref bool resultat)
         {
             int intOut = 0;
-            if (int.TryParse(text, out intOut))
+            if (int.TryParse(text.Replace(" ", ""), out intOut))
             {
                 return intOut;
             }
@@ -108,11 +108,11 @@ namespace BoendekostnadetDesktop
         private void ÅterställAnget()
         {
             tbxÅr.Text = "20";
-            tbxHyra.Text = "10000";
-            tbxBostadsrättPris.Text = "2000000";
+            tbxHyra.Text = "10 000";
+            tbxBostadsrättPris.Text = "2 000 000";
             tbxBostadsrättenRänta.Text = "1,4%";
             tbxBostadsrättAvgift.Text = "4000";
-            tbxHusPris.Text = "3000000";
+            tbxHusPris.Text = "3 000 000";
             tbxHusRänta.Text = "1,4%";
             rbnTusental.Checked = true;
         }
