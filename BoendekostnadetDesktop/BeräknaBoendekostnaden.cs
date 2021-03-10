@@ -83,7 +83,7 @@ namespace BoendekostnadetDesktop
             _hävstångAktier = 0.00M; //ange hur många procents hävstång man tar på sina aktier
             _värdeökningBostadsrätt = 0.04M;
             _värdeökningHus = 0.04M;
-            _delaSvaretMed = 1000; //använd gärna 1, 1000 eller 1000*1000 för att få beloppet i kronor, tusental eller i miljoner
+            _delaSvaretMed = param.DelaSvaretMed; //använd gärna 1, 1000 eller 1000*1000 för att få beloppet i kronor, tusental eller i miljoner
             _försäljningskostnadBostad = 80 * 1000; //exempelvis mäklare, fina till bostaden osv.
 
             //sätt parametrar för hyresrätten

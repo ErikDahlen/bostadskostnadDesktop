@@ -41,6 +41,10 @@ namespace BoendekostnadetDesktop
             this.lblHyreskostnad = new System.Windows.Forms.Label();
             this.btnBeräkna = new System.Windows.Forms.Button();
             this.groupBoxAnge = new System.Windows.Forms.GroupBox();
+            this.rbnMiljoner = new System.Windows.Forms.RadioButton();
+            this.rbnTusental = new System.Windows.Forms.RadioButton();
+            this.rbnKronor = new System.Windows.Forms.RadioButton();
+            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.tbxHusRänta = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -184,6 +188,10 @@ namespace BoendekostnadetDesktop
             // 
             // groupBoxAnge
             // 
+            this.groupBoxAnge.Controls.Add(this.rbnMiljoner);
+            this.groupBoxAnge.Controls.Add(this.rbnTusental);
+            this.groupBoxAnge.Controls.Add(this.rbnKronor);
+            this.groupBoxAnge.Controls.Add(this.label8);
             this.groupBoxAnge.Controls.Add(this.label7);
             this.groupBoxAnge.Controls.Add(this.tbxHusRänta);
             this.groupBoxAnge.Controls.Add(this.label6);
@@ -204,6 +212,48 @@ namespace BoendekostnadetDesktop
             this.groupBoxAnge.TabIndex = 1;
             this.groupBoxAnge.TabStop = false;
             this.groupBoxAnge.Text = "Ange följande";
+            // 
+            // rbnMiljoner
+            // 
+            this.rbnMiljoner.AutoSize = true;
+            this.rbnMiljoner.Location = new System.Drawing.Point(111, 273);
+            this.rbnMiljoner.Name = "rbnMiljoner";
+            this.rbnMiljoner.Size = new System.Drawing.Size(69, 19);
+            this.rbnMiljoner.TabIndex = 17;
+            this.rbnMiljoner.TabStop = true;
+            this.rbnMiljoner.Text = "miljoner";
+            this.rbnMiljoner.UseVisualStyleBackColor = true;
+            // 
+            // rbnTusental
+            // 
+            this.rbnTusental.AutoSize = true;
+            this.rbnTusental.Location = new System.Drawing.Point(177, 249);
+            this.rbnTusental.Name = "rbnTusental";
+            this.rbnTusental.Size = new System.Drawing.Size(67, 19);
+            this.rbnTusental.TabIndex = 16;
+            this.rbnTusental.TabStop = true;
+            this.rbnTusental.Text = "tusental";
+            this.rbnTusental.UseVisualStyleBackColor = true;
+            // 
+            // rbnKronor
+            // 
+            this.rbnKronor.AutoSize = true;
+            this.rbnKronor.Location = new System.Drawing.Point(111, 249);
+            this.rbnKronor.Name = "rbnKronor";
+            this.rbnKronor.Size = new System.Drawing.Size(60, 19);
+            this.rbnKronor.TabIndex = 15;
+            this.rbnKronor.TabStop = true;
+            this.rbnKronor.Text = "kronor";
+            this.rbnKronor.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 249);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(71, 15);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Visa svaret i:";
             // 
             // label7
             // 
@@ -430,6 +480,10 @@ namespace BoendekostnadetDesktop
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbxHusPris;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.RadioButton rbnMiljoner;
+        private System.Windows.Forms.RadioButton rbnTusental;
+        private System.Windows.Forms.RadioButton rbnKronor;
+        private System.Windows.Forms.Label label8;
     }
 }
 

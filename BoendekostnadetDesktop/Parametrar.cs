@@ -48,5 +48,11 @@ namespace BoendekostnadetDesktop
             get { return husRänta; }
             set { husRänta = value; }
         }
+        private int delaSvaretMed;
+        public int DelaSvaretMed
+        {
+            get { return delaSvaretMed; }
+            set { delaSvaretMed = value; }
+        }
     }
 }

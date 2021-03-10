@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dae\\source\\repos\\BoendekostnadetDesktop\\BoendekostnadetDesktop\\BoendekostnadetDesktop.csproj",
+      "projectUniqueName": "C:\\Users\\dae\\OneDrive - Sigma Technology\\Documents\\projekt\\bostadskostnadDesktop\\BoendekostnadetDesktop\\BoendekostnadetDesktop.csproj",
       "projectName": "BoendekostnadetDesktop",
-      "projectPath": "C:\\Users\\dae\\source\\repos\\BoendekostnadetDesktop\\BoendekostnadetDesktop\\BoendekostnadetDesktop.csproj",
+      "projectPath": "C:\\Users\\dae\\OneDrive - Sigma Technology\\Documents\\projekt\\bostadskostnadDesktop\\BoendekostnadetDesktop\\BoendekostnadetDesktop.csproj",
       "packagesPath": "C:\\Users\\dae\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dae\\source\\repos\\BoendekostnadetDesktop\\BoendekostnadetDesktop\\obj\\",
+      "outputPath": "C:\\Users\\dae\\OneDrive - Sigma Technology\\Documents\\projekt\\bostadskostnadDesktop\\BoendekostnadetDesktop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

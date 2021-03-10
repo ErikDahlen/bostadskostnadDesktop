@@ -46,6 +46,7 @@ namespace BoendekostnadetDesktop
             //Standardparametrar generelt och hyresrätt
             param.AntalÅr = HämtaIntParameter(tbxÅr.Text, "Antal år", ref resultat);
             param.Hyra = HämtaIntParameter(tbxHyra.Text, "Hyran", ref resultat);
+            param.DelaSvaretMed = HämtaDelaSvaretMed();
 
             //Standardparametrar bostadsrätt
             param.BostadsrättPris = HämtaIntParameter(tbxBostadsrättPris.Text, "Bostadsrättens pris", ref resultat);
@@ -57,6 +58,18 @@ namespace BoendekostnadetDesktop
             param.HusRänta = HämtaDecimalParameter(tbxHusRänta.Text.Replace("%", ""), "Bostadsrättens ränta", ref resultat) / 100;
 
             return resultat;
+        }
+        private int HämtaDelaSvaretMed()
+        {
+            if (rbnTusental.Checked)
+            {
+                return 1000;
+            }
+            if (rbnMiljoner.Checked)
+            {
+                return 1000 * 1000;
+            }
+            return 1;
         }
         private decimal HämtaDecimalParameter(string text, string namn, ref bool resultat)
         {
@@ -101,6 +114,7 @@ namespace BoendekostnadetDesktop
             tbxBostadsrättAvgift.Text = "4000";
             tbxHusPris.Text = "3000000";
             tbxHusRänta.Text = "1,4%";
+            rbnTusental.Checked = true;
         }
     }
 }
