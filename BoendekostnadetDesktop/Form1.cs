@@ -66,8 +66,21 @@ namespace BoendekostnadetDesktop
             param.FörsäljningBostad = HämtaIntParameter(tbxFörsäljningBostad.Text, "Bostadens försäljningskostnad", ref resultat);
             param.Hyresökning = HämtaDecimalParameter(tbxHyresökning.Text.Replace("%", ""), "Hyresökningen", ref resultat) / 100;
             param.BostadsrättAvgifthöjning = HämtaDecimalParameter(tbxBostadsrättAvgiftshöjning.Text.Replace("%", ""), "Bostadsrättens avgiftshöjning", ref resultat) / 100;
-            param.BostadsrättUnderhåll = HämtaIntParameter(tbxBostadsrättUnderhåll.Text, "Bostadens underhållskostnad", ref resultat);
+            param.BostadsrättUnderhåll = HämtaIntParameter(tbxBostadsrättUnderhåll.Text, "Bostadsrättens underhållskostnad", ref resultat);
             param.BostadsrättUnderhållsökning = HämtaDecimalParameter(tbxBostadsrättUnderhållsökning.Text.Replace("%", ""), "Bostadsrättens underhållskostnadsökning", ref resultat) / 100;
+            param.BostadsrättEnligtAmmorteringskravet = cbxBostadsrättEnligtAmmorteringskravet.Checked;
+            param.BostadsrättLågLönAmmortering = cbxBostadsrättLågLönAmmortering.Checked;
+            param.BostadsrättFastAmmortering = HämtaIntParameter(tbxBostadsrättFastAmmortering.Text, "Bostadsrättens fasta ammortering", ref resultat);
+            param.HusDriftkostnad = HämtaIntParameter(tbxHusDriftkostnader.Text, "Husets driftkostnader", ref resultat);
+            param.HusDriftkostnadsökning = HämtaDecimalParameter(tbxHusDriftkostnadsökning.Text.Replace("%", ""), "Husets driftkostnadsökning", ref resultat) / 100;
+            param.HusInköpskostnad = HämtaDecimalParameter(tbxHusInköpskostnad.Text.Replace("%", ""), "Husets inköpskostnad för lagfart och pantbrev", ref resultat) / 100;
+            param.HusUnderhållskostnad = HämtaIntParameter(tbxHusUnderhållskostnad.Text, "Husets underhållskostnader", ref resultat);
+            param.HusUnderhållsökning = HämtaDecimalParameter(tbxHusUnderhållsökning.Text.Replace("%", ""), "Husets underhållskostnadsökning", ref resultat) / 100;
+            param.HusEnligtAmmorteringskravet = cbxHusEnligtAmmorteringskravet.Checked;
+            param.HusLågLönAmmortering = cbxHusLågLönAmmortering.Checked;
+            param.HusFastAmmortering = HämtaIntParameter(tbxHusFastAmmortering.Text, "Husets fasta ammortering", ref resultat);
+            param.BostadsrättAndelLånVidKöpet = HämtaDecimalParameter(tbxBostadsrättAndelLånVidKöp.Text.Replace("%", ""), "Bostadsrättens lån till andel av inköpspriset", ref resultat) / 100;
+            param.HusAndelLånVidKöpet = HämtaDecimalParameter(tbxHusAndelLånVidKöpet.Text.Replace("%", ""), "Husets lån till andel av inköpspriset", ref resultat) / 100;
 
             return resultat;
         }
@@ -144,11 +157,36 @@ namespace BoendekostnadetDesktop
             tbxBostadsrättAvgiftshöjning.Text = "2%";
             tbxBostadsrättUnderhåll.Text = "1000";
             tbxBostadsrättUnderhållsökning.Text = "2%";
+            cbxBostadsrättEnligtAmmorteringskravet.Checked = true;
+            cbxBostadsrättLågLönAmmortering.Checked = false;
+            tbxBostadsrättFastAmmortering.Text = "3000";
+            tbxHusDriftkostnader.Text = "3000";
+            tbxHusDriftkostnadsökning.Text = "2%";
+            tbxHusInköpskostnad.Text = "2,5%";
+            tbxHusUnderhållskostnad.Text = "5000";
+            tbxHusUnderhållsökning.Text = "2%";
+            cbxHusEnligtAmmorteringskravet.Checked = true;
+            cbxHusLågLönAmmortering.Checked = false;
+            tbxHusFastAmmortering.Text = "3000";
+            tbxBostadsrättAndelLånVidKöp.Text = "85%";
+            tbxHusAndelLånVidKöpet.Text = "85%";
         }
 
         private void Bostadskostnader_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void cbxqBostadsrättAmmorteringskravet_CheckedChanged(object sender, EventArgs e)
+        {
+            tbxBostadsrättFastAmmortering.Enabled = !cbxBostadsrättEnligtAmmorteringskravet.Checked;
+            cbxBostadsrättLågLönAmmortering.Enabled = cbxBostadsrättEnligtAmmorteringskravet.Checked;
+        }
+
+        private void cbxHusEnligtAmmorteringskravet_CheckedChanged(object sender, EventArgs e)
+        {
+            tbxHusFastAmmortering.Enabled = !cbxHusEnligtAmmorteringskravet.Checked;
+            cbxHusLågLönAmmortering.Enabled = cbxHusEnligtAmmorteringskravet.Checked;
         }
     }
 }

@@ -94,28 +94,28 @@ namespace BoendekostnadetDesktop
             _bostadsrätten.Avgift = param.BostadsrättAvgift;
             _bostadsrätten.Avgiftsökning = param.BostadsrättAvgifthöjning;
             _bostadsrätten.Inköpspris = param.BostadsrättPris;
-            _bostadsrätten.Lån = (int)(_bostadsrätten.Inköpspris * 0.85M);
+            _bostadsrätten.Lån = (int)(_bostadsrätten.Inköpspris * param.BostadsrättAndelLånVidKöpet);
             _bostadsrätten.Värde = _bostadsrätten.Inköpspris;
             _bostadsrätten.Ränta = param.BostadsrättRänta;
-            _bostadsrätten.FastAmmortering = 3000;
-            _bostadsrätten.AmmorteraEnligtAmmorteringsreglerna = true;
-            _bostadsrätten.LågLönExtraAmmortering = false;
+            _bostadsrätten.FastAmmortering = param.BostadsrättFastAmmortering;
+            _bostadsrätten.AmmorteraEnligtAmmorteringsreglerna = param.BostadsrättEnligtAmmorteringskravet;
+            _bostadsrätten.LågLönExtraAmmortering = param.BostadsrättLågLönAmmortering;
             _bostadsrätten.Underhåll = param.BostadsrättUnderhåll;
             _bostadsrätten.UnderhållÖkning = param.BostadsrättUnderhållsökning;
 
             //sätt parametrar för hus
-            _hus.Driftkostnad = 3000;
-            _hus.Driftkostnadsökning = 0.02M;
+            _hus.Driftkostnad = param.HusDriftkostnad;
+            _hus.Driftkostnadsökning = param.HusDriftkostnadsökning;
             _hus.Inköpspris = param.HusPris;
-            _hus.Inköpskostnad = (int)(_hus.Inköpspris * 0.025M); //kostnad för lagfart och pantbrev, 2.5% antar att pantbrev finns på en del av lånekostnaden men inte allt.
-            _hus.Lån = (int)(_hus.Inköpspris * 0.85M);
+            _hus.Inköpskostnad = (int)(_hus.Inköpspris * param.HusInköpskostnad); //kostnad för lagfart och pantbrev, 2.5% antar att pantbrev finns på en del av lånekostnaden men inte allt.
+            _hus.Lån = (int)(_hus.Inköpspris * param.HusAndelLånVidKöpet);
             _hus.Värde = _hus.Inköpspris;
             _hus.Ränta = param.HusRänta;
-            _hus.FastAmmortering = 3000;
-            _hus.AmmorteraEnligtAmmorteringsreglerna = true;
-            _hus.LågLönExtraAmmortering = false;
-            _hus.Underhåll = 5000;
-            _hus.UnderhållÖkning = 0.02M;
+            _hus.FastAmmortering = param.HusFastAmmortering;
+            _hus.AmmorteraEnligtAmmorteringsreglerna = param.HusEnligtAmmorteringskravet;
+            _hus.LågLönExtraAmmortering = param.HusLågLönAmmortering;
+            _hus.Underhåll = param.HusUnderhållskostnad;
+            _hus.UnderhållÖkning = param.HusUnderhållsökning;
         }
         private int HögstaÅrskostnaden()
         {

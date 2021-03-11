@@ -64,6 +64,32 @@ namespace BoendekostnadetDesktop
             this.btnÅterställInställningar = new System.Windows.Forms.Button();
             this.lblInställningar = new System.Windows.Forms.Label();
             this.groupBoxInställningar = new System.Windows.Forms.GroupBox();
+            this.tbxHusFastAmmortering = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.cbxHusLågLönAmmortering = new System.Windows.Forms.CheckBox();
+            this.cbxHusEnligtAmmorteringskravet = new System.Windows.Forms.CheckBox();
+            this.tbxHusUnderhållsökning = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.tbxHusUnderhållskostnad = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.tbxHusInköpskostnad = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.tbxHusDriftkostnadsökning = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.tbxHusDriftkostnader = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.tbxBostadsrättFastAmmortering = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.cbxBostadsrättLågLönAmmortering = new System.Windows.Forms.CheckBox();
+            this.cbxBostadsrättEnligtAmmorteringskravet = new System.Windows.Forms.CheckBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.tbxBostadsrättUnderhållsökning = new System.Windows.Forms.TextBox();
+            this.tbxBostadsrättUnderhåll = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.tbxBostadsrättAvgiftshöjning = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.tbxHyresökning = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -76,13 +102,10 @@ namespace BoendekostnadetDesktop
             this.label10 = new System.Windows.Forms.Label();
             this.tbxVärdeökningAktier = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.tbxBostadsrättAvgiftshöjning = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.tbxBostadsrättUnderhåll = new System.Windows.Forms.TextBox();
-            this.tbxBostadsrättUnderhållsökning = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.tbxBostadsrättAndelLånVidKöp = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.tbxHusAndelLånVidKöpet = new System.Windows.Forms.TextBox();
             this.tabMain.SuspendLayout();
             this.tabBeräkna.SuspendLayout();
             this.groupBoxResultat.SuspendLayout();
@@ -475,6 +498,29 @@ namespace BoendekostnadetDesktop
             // 
             // groupBoxInställningar
             // 
+            this.groupBoxInställningar.Controls.Add(this.tbxHusAndelLånVidKöpet);
+            this.groupBoxInställningar.Controls.Add(this.label28);
+            this.groupBoxInställningar.Controls.Add(this.label27);
+            this.groupBoxInställningar.Controls.Add(this.tbxBostadsrättAndelLånVidKöp);
+            this.groupBoxInställningar.Controls.Add(this.tbxHusFastAmmortering);
+            this.groupBoxInställningar.Controls.Add(this.label26);
+            this.groupBoxInställningar.Controls.Add(this.cbxHusLågLönAmmortering);
+            this.groupBoxInställningar.Controls.Add(this.cbxHusEnligtAmmorteringskravet);
+            this.groupBoxInställningar.Controls.Add(this.tbxHusUnderhållsökning);
+            this.groupBoxInställningar.Controls.Add(this.label25);
+            this.groupBoxInställningar.Controls.Add(this.tbxHusUnderhållskostnad);
+            this.groupBoxInställningar.Controls.Add(this.label24);
+            this.groupBoxInställningar.Controls.Add(this.tbxHusInköpskostnad);
+            this.groupBoxInställningar.Controls.Add(this.label23);
+            this.groupBoxInställningar.Controls.Add(this.tbxHusDriftkostnadsökning);
+            this.groupBoxInställningar.Controls.Add(this.label22);
+            this.groupBoxInställningar.Controls.Add(this.tbxHusDriftkostnader);
+            this.groupBoxInställningar.Controls.Add(this.label21);
+            this.groupBoxInställningar.Controls.Add(this.label20);
+            this.groupBoxInställningar.Controls.Add(this.tbxBostadsrättFastAmmortering);
+            this.groupBoxInställningar.Controls.Add(this.label19);
+            this.groupBoxInställningar.Controls.Add(this.cbxBostadsrättLågLönAmmortering);
+            this.groupBoxInställningar.Controls.Add(this.cbxBostadsrättEnligtAmmorteringskravet);
             this.groupBoxInställningar.Controls.Add(this.label18);
             this.groupBoxInställningar.Controls.Add(this.label17);
             this.groupBoxInställningar.Controls.Add(this.tbxBostadsrättUnderhållsökning);
@@ -503,10 +549,230 @@ namespace BoendekostnadetDesktop
             this.groupBoxInställningar.TabStop = false;
             this.groupBoxInställningar.Text = "Avancerade inställningar";
             // 
+            // tbxHusFastAmmortering
+            // 
+            this.tbxHusFastAmmortering.Location = new System.Drawing.Point(900, 339);
+            this.tbxHusFastAmmortering.Name = "tbxHusFastAmmortering";
+            this.tbxHusFastAmmortering.Size = new System.Drawing.Size(94, 31);
+            this.tbxHusFastAmmortering.TabIndex = 37;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(543, 342);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(156, 25);
+            this.label26.TabIndex = 36;
+            this.label26.Text = "Fast ammortering:";
+            // 
+            // cbxHusLågLönAmmortering
+            // 
+            this.cbxHusLågLönAmmortering.AutoSize = true;
+            this.cbxHusLågLönAmmortering.Location = new System.Drawing.Point(545, 303);
+            this.cbxHusLågLönAmmortering.Name = "cbxHusLågLönAmmortering";
+            this.cbxHusLågLönAmmortering.Size = new System.Drawing.Size(293, 29);
+            this.cbxHusLågLönAmmortering.TabIndex = 35;
+            this.cbxHusLågLönAmmortering.Text = "Låg lön, extra ammorteringskrav";
+            this.cbxHusLågLönAmmortering.UseVisualStyleBackColor = true;
+            // 
+            // cbxHusEnligtAmmorteringskravet
+            // 
+            this.cbxHusEnligtAmmorteringskravet.AutoSize = true;
+            this.cbxHusEnligtAmmorteringskravet.Location = new System.Drawing.Point(545, 267);
+            this.cbxHusEnligtAmmorteringskravet.Name = "cbxHusEnligtAmmorteringskravet";
+            this.cbxHusEnligtAmmorteringskravet.Size = new System.Drawing.Size(343, 29);
+            this.cbxHusEnligtAmmorteringskravet.TabIndex = 34;
+            this.cbxHusEnligtAmmorteringskravet.Text = "Ammortera enligt ammorteringskravet";
+            this.cbxHusEnligtAmmorteringskravet.UseVisualStyleBackColor = true;
+            this.cbxHusEnligtAmmorteringskravet.CheckedChanged += new System.EventHandler(this.cbxHusEnligtAmmorteringskravet_CheckedChanged);
+            // 
+            // tbxHusUnderhållsökning
+            // 
+            this.tbxHusUnderhållsökning.Location = new System.Drawing.Point(900, 227);
+            this.tbxHusUnderhållsökning.Name = "tbxHusUnderhållsökning";
+            this.tbxHusUnderhållsökning.Size = new System.Drawing.Size(94, 31);
+            this.tbxHusUnderhållsökning.TabIndex = 33;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(545, 227);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(305, 25);
+            this.label25.TabIndex = 32;
+            this.label25.Text = "Årlig ökning av underhållskostnaden:";
+            // 
+            // tbxHusUnderhållskostnad
+            // 
+            this.tbxHusUnderhållskostnad.Location = new System.Drawing.Point(900, 189);
+            this.tbxHusUnderhållskostnad.Name = "tbxHusUnderhållskostnad";
+            this.tbxHusUnderhållskostnad.Size = new System.Drawing.Size(94, 31);
+            this.tbxHusUnderhållskostnad.TabIndex = 31;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(545, 189);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(254, 25);
+            this.label24.TabIndex = 30;
+            this.label24.Text = "Underhållskostnad per månad:";
+            // 
+            // tbxHusInköpskostnad
+            // 
+            this.tbxHusInköpskostnad.Location = new System.Drawing.Point(900, 151);
+            this.tbxHusInköpskostnad.Name = "tbxHusInköpskostnad";
+            this.tbxHusInköpskostnad.Size = new System.Drawing.Size(94, 31);
+            this.tbxHusInköpskostnad.TabIndex = 29;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(545, 151);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(326, 25);
+            this.label23.TabIndex = 28;
+            this.label23.Text = "Inköpskostnad, ex lagfart och pantbrev:";
+            // 
+            // tbxHusDriftkostnadsökning
+            // 
+            this.tbxHusDriftkostnadsökning.Location = new System.Drawing.Point(900, 111);
+            this.tbxHusDriftkostnadsökning.Name = "tbxHusDriftkostnadsökning";
+            this.tbxHusDriftkostnadsökning.Size = new System.Drawing.Size(94, 31);
+            this.tbxHusDriftkostnadsökning.TabIndex = 27;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(545, 114);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(272, 25);
+            this.label22.TabIndex = 26;
+            this.label22.Text = "Årlig ökning av driftkostnaderna:";
+            // 
+            // tbxHusDriftkostnader
+            // 
+            this.tbxHusDriftkostnader.Location = new System.Drawing.Point(900, 73);
+            this.tbxHusDriftkostnader.Name = "tbxHusDriftkostnader";
+            this.tbxHusDriftkostnader.Size = new System.Drawing.Size(94, 31);
+            this.tbxHusDriftkostnader.TabIndex = 25;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(545, 76);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(221, 25);
+            this.label21.TabIndex = 24;
+            this.label21.Text = "Driftkostnader per månad:";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(545, 38);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(154, 25);
+            this.label20.TabIndex = 23;
+            this.label20.Text = "Husets kostnader:";
+            // 
+            // tbxBostadsrättFastAmmortering
+            // 
+            this.tbxBostadsrättFastAmmortering.Location = new System.Drawing.Point(380, 430);
+            this.tbxBostadsrättFastAmmortering.Name = "tbxBostadsrättFastAmmortering";
+            this.tbxBostadsrättFastAmmortering.Size = new System.Drawing.Size(93, 31);
+            this.tbxBostadsrättFastAmmortering.TabIndex = 22;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(10, 433);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(156, 25);
+            this.label19.TabIndex = 21;
+            this.label19.Text = "Fast ammortering:";
+            // 
+            // cbxBostadsrättLågLönAmmortering
+            // 
+            this.cbxBostadsrättLågLönAmmortering.AutoSize = true;
+            this.cbxBostadsrättLågLönAmmortering.Location = new System.Drawing.Point(10, 398);
+            this.cbxBostadsrättLågLönAmmortering.Name = "cbxBostadsrättLågLönAmmortering";
+            this.cbxBostadsrättLågLönAmmortering.Size = new System.Drawing.Size(293, 29);
+            this.cbxBostadsrättLågLönAmmortering.TabIndex = 20;
+            this.cbxBostadsrättLågLönAmmortering.Text = "Låg lön, extra ammorteringskrav";
+            this.cbxBostadsrättLågLönAmmortering.UseVisualStyleBackColor = true;
+            // 
+            // cbxBostadsrättEnligtAmmorteringskravet
+            // 
+            this.cbxBostadsrättEnligtAmmorteringskravet.AutoSize = true;
+            this.cbxBostadsrättEnligtAmmorteringskravet.Location = new System.Drawing.Point(10, 363);
+            this.cbxBostadsrättEnligtAmmorteringskravet.Name = "cbxBostadsrättEnligtAmmorteringskravet";
+            this.cbxBostadsrättEnligtAmmorteringskravet.Size = new System.Drawing.Size(343, 29);
+            this.cbxBostadsrättEnligtAmmorteringskravet.TabIndex = 19;
+            this.cbxBostadsrättEnligtAmmorteringskravet.Text = "Ammortera enligt ammorteringskravet";
+            this.cbxBostadsrättEnligtAmmorteringskravet.UseVisualStyleBackColor = true;
+            this.cbxBostadsrättEnligtAmmorteringskravet.CheckedChanged += new System.EventHandler(this.cbxqBostadsrättAmmorteringskravet_CheckedChanged);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(10, 335);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(305, 25);
+            this.label18.TabIndex = 18;
+            this.label18.Text = "Årlig ökning av underhållskostnaden:";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(10, 298);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(254, 25);
+            this.label17.TabIndex = 17;
+            this.label17.Text = "Underhållskostnad per månad:";
+            // 
+            // tbxBostadsrättUnderhållsökning
+            // 
+            this.tbxBostadsrättUnderhållsökning.Location = new System.Drawing.Point(380, 329);
+            this.tbxBostadsrättUnderhållsökning.Name = "tbxBostadsrättUnderhållsökning";
+            this.tbxBostadsrättUnderhållsökning.Size = new System.Drawing.Size(93, 31);
+            this.tbxBostadsrättUnderhållsökning.TabIndex = 16;
+            // 
+            // tbxBostadsrättUnderhåll
+            // 
+            this.tbxBostadsrättUnderhåll.Location = new System.Drawing.Point(380, 292);
+            this.tbxBostadsrättUnderhåll.Name = "tbxBostadsrättUnderhåll";
+            this.tbxBostadsrättUnderhåll.Size = new System.Drawing.Size(93, 31);
+            this.tbxBostadsrättUnderhåll.TabIndex = 15;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(10, 255);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(171, 25);
+            this.label16.TabIndex = 14;
+            this.label16.Text = "Årlig avgiftshöjning:";
+            // 
+            // tbxBostadsrättAvgiftshöjning
+            // 
+            this.tbxBostadsrättAvgiftshöjning.Location = new System.Drawing.Point(380, 255);
+            this.tbxBostadsrättAvgiftshöjning.Name = "tbxBostadsrättAvgiftshöjning";
+            this.tbxBostadsrättAvgiftshöjning.Size = new System.Drawing.Size(93, 31);
+            this.tbxBostadsrättAvgiftshöjning.TabIndex = 13;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(10, 218);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(217, 25);
+            this.label15.TabIndex = 12;
+            this.label15.Text = "Bostadsrättens kostnader:";
+            // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(10, 227);
+            this.label14.Location = new System.Drawing.Point(10, 154);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(185, 25);
             this.label14.TabIndex = 11;
@@ -514,7 +780,7 @@ namespace BoendekostnadetDesktop
             // 
             // tbxHyresökning
             // 
-            this.tbxHyresökning.Location = new System.Drawing.Point(380, 224);
+            this.tbxHyresökning.Location = new System.Drawing.Point(380, 151);
             this.tbxHyresökning.Name = "tbxHyresökning";
             this.tbxHyresökning.Size = new System.Drawing.Size(93, 31);
             this.tbxHyresökning.TabIndex = 10;
@@ -522,7 +788,7 @@ namespace BoendekostnadetDesktop
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(10, 189);
+            this.label13.Location = new System.Drawing.Point(10, 114);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(334, 25);
             this.label13.TabIndex = 9;
@@ -530,7 +796,7 @@ namespace BoendekostnadetDesktop
             // 
             // tbxFörsäljningBostad
             // 
-            this.tbxFörsäljningBostad.Location = new System.Drawing.Point(380, 186);
+            this.tbxFörsäljningBostad.Location = new System.Drawing.Point(380, 114);
             this.tbxFörsäljningBostad.Name = "tbxFörsäljningBostad";
             this.tbxFörsäljningBostad.Size = new System.Drawing.Size(93, 31);
             this.tbxFörsäljningBostad.TabIndex = 8;
@@ -538,7 +804,7 @@ namespace BoendekostnadetDesktop
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(10, 151);
+            this.label12.Location = new System.Drawing.Point(543, 379);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(190, 25);
             this.label12.TabIndex = 7;
@@ -547,7 +813,7 @@ namespace BoendekostnadetDesktop
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(10, 114);
+            this.label11.Location = new System.Drawing.Point(7, 470);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(268, 25);
             this.label11.TabIndex = 6;
@@ -555,14 +821,14 @@ namespace BoendekostnadetDesktop
             // 
             // tbxVärdeökningHus
             // 
-            this.tbxVärdeökningHus.Location = new System.Drawing.Point(380, 147);
+            this.tbxVärdeökningHus.Location = new System.Drawing.Point(900, 376);
             this.tbxVärdeökningHus.Name = "tbxVärdeökningHus";
-            this.tbxVärdeökningHus.Size = new System.Drawing.Size(93, 31);
+            this.tbxVärdeökningHus.Size = new System.Drawing.Size(94, 31);
             this.tbxVärdeökningHus.TabIndex = 5;
             // 
             // tbxVärdeökningBostadsrätt
             // 
-            this.tbxVärdeökningBostadsrätt.Location = new System.Drawing.Point(380, 110);
+            this.tbxVärdeökningBostadsrätt.Location = new System.Drawing.Point(380, 467);
             this.tbxVärdeökningBostadsrätt.Name = "tbxVärdeökningBostadsrätt";
             this.tbxVärdeökningBostadsrätt.Size = new System.Drawing.Size(93, 31);
             this.tbxVärdeökningBostadsrätt.TabIndex = 4;
@@ -601,62 +867,37 @@ namespace BoendekostnadetDesktop
             this.label9.TabIndex = 0;
             this.label9.Text = "Årlig värdeökning aktier:";
             // 
-            // label15
+            // tbxBostadsrättAndelLånVidKöp
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(10, 277);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(217, 25);
-            this.label15.TabIndex = 12;
-            this.label15.Text = "Bostadsrättens kostnader:";
+            this.tbxBostadsrättAndelLånVidKöp.Location = new System.Drawing.Point(380, 504);
+            this.tbxBostadsrättAndelLånVidKöp.Name = "tbxBostadsrättAndelLånVidKöp";
+            this.tbxBostadsrättAndelLånVidKöp.Size = new System.Drawing.Size(93, 31);
+            this.tbxBostadsrättAndelLånVidKöp.TabIndex = 38;
             // 
-            // tbxBostadsrättAvgiftshöjning
+            // label27
             // 
-            this.tbxBostadsrättAvgiftshöjning.Location = new System.Drawing.Point(380, 315);
-            this.tbxBostadsrättAvgiftshöjning.Name = "tbxBostadsrättAvgiftshöjning";
-            this.tbxBostadsrättAvgiftshöjning.Size = new System.Drawing.Size(93, 31);
-            this.tbxBostadsrättAvgiftshöjning.TabIndex = 13;
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(10, 507);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(170, 25);
+            this.label27.TabIndex = 39;
+            this.label27.Text = "Andel lån vid köpet:";
             // 
-            // label16
+            // label28
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(10, 318);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(171, 25);
-            this.label16.TabIndex = 14;
-            this.label16.Text = "Årlig avgiftshöjning:";
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(545, 420);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(170, 25);
+            this.label28.TabIndex = 40;
+            this.label28.Text = "Andel lån vid köpet:";
             // 
-            // tbxBostadsrättUnderhåll
+            // tbxHusAndelLånVidKöpet
             // 
-            this.tbxBostadsrättUnderhåll.Location = new System.Drawing.Point(380, 353);
-            this.tbxBostadsrättUnderhåll.Name = "tbxBostadsrättUnderhåll";
-            this.tbxBostadsrättUnderhåll.Size = new System.Drawing.Size(93, 31);
-            this.tbxBostadsrättUnderhåll.TabIndex = 15;
-            // 
-            // tbxBostadsrättUnderhållsökning
-            // 
-            this.tbxBostadsrättUnderhållsökning.Location = new System.Drawing.Point(380, 390);
-            this.tbxBostadsrättUnderhållsökning.Name = "tbxBostadsrättUnderhållsökning";
-            this.tbxBostadsrättUnderhållsökning.Size = new System.Drawing.Size(93, 31);
-            this.tbxBostadsrättUnderhållsökning.TabIndex = 16;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(10, 356);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(254, 25);
-            this.label17.TabIndex = 17;
-            this.label17.Text = "Underhållskostnad per månad:";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(10, 393);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(305, 25);
-            this.label18.TabIndex = 18;
-            this.label18.Text = "Årlig ökning av underhållskostnaden:";
+            this.tbxHusAndelLånVidKöpet.Location = new System.Drawing.Point(900, 414);
+            this.tbxHusAndelLånVidKöpet.Name = "tbxHusAndelLånVidKöpet";
+            this.tbxHusAndelLånVidKöpet.Size = new System.Drawing.Size(94, 31);
+            this.tbxHusAndelLånVidKöpet.TabIndex = 41;
             // 
             // Bostadskostnader
             // 
@@ -740,6 +981,29 @@ namespace BoendekostnadetDesktop
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox tbxBostadsrättUnderhållsökning;
         private System.Windows.Forms.TextBox tbxBostadsrättUnderhåll;
+        private System.Windows.Forms.TextBox tbxBostadsrättFastAmmortering;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.CheckBox cbxBostadsrättLågLönAmmortering;
+        private System.Windows.Forms.CheckBox cbxBostadsrättEnligtAmmorteringskravet;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox tbxHusDriftkostnadsökning;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox tbxHusDriftkostnader;
+        private System.Windows.Forms.TextBox tbxHusInköpskostnad;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox tbxHusUnderhållsökning;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox tbxHusUnderhållskostnad;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox tbxHusFastAmmortering;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.CheckBox cbxHusLågLönAmmortering;
+        private System.Windows.Forms.CheckBox cbxHusEnligtAmmorteringskravet;
+        private System.Windows.Forms.TextBox tbxHusAndelLånVidKöpet;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.TextBox tbxBostadsrättAndelLånVidKöp;
     }
 }
 

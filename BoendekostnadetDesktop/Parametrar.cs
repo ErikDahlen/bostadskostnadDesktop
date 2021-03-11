@@ -108,5 +108,83 @@ namespace BoendekostnadetDesktop
             get { return bostadsrättUnderhållsökning; }
             set { bostadsrättUnderhållsökning = value; }
         }
+        private bool bostadsrättEnligtAmmorteringskravet;
+        public bool BostadsrättEnligtAmmorteringskravet
+        {
+            get { return bostadsrättEnligtAmmorteringskravet; }
+            set { bostadsrättEnligtAmmorteringskravet = value; }
+        }
+        private bool bostadsrättLågLönAmmortering;
+        public bool BostadsrättLågLönAmmortering
+        {
+            get { return bostadsrättLågLönAmmortering; }
+            set { bostadsrättLågLönAmmortering = value; }
+        }
+        private int bostadsrättFastAmmortering;
+        public int BostadsrättFastAmmortering
+        {
+            get { return bostadsrättFastAmmortering; }
+            set { bostadsrättFastAmmortering = value; }
+        }
+        private int husDriftkostnad;
+        public int HusDriftkostnad
+        {
+            get { return husDriftkostnad; }
+            set { husDriftkostnad = value; }
+        }
+        private decimal husDriftkostnadsökning;
+        public decimal HusDriftkostnadsökning
+        {
+            get { return husDriftkostnadsökning; }
+            set { husDriftkostnadsökning = value; }
+        }
+        private decimal husInköpskostnad;
+        public decimal HusInköpskostnad
+        {
+            get { return husInköpskostnad; }
+            set { husInköpskostnad = value; }
+        }
+        private int husUnderhållskostnad;
+        public int HusUnderhållskostnad
+        {
+            get { return husUnderhållskostnad; }
+            set { husUnderhållskostnad = value; }
+        }
+        private decimal husUnderhållsökning;
+        public decimal HusUnderhållsökning
+        {
+            get { return husUnderhållsökning; }
+            set { husUnderhållsökning = value; }
+        }
+        private bool husEnligtAmmorteringskravet;
+        public bool HusEnligtAmmorteringskravet
+        {
+            get { return husEnligtAmmorteringskravet; }
+            set { husEnligtAmmorteringskravet = value; }
+        }
+        private bool husLågLönAmmortering;
+        public bool HusLågLönAmmortering
+        {
+            get { return husLågLönAmmortering; }
+            set { husLågLönAmmortering = value; }
+        }
+        private int husFastAmmortering;
+        public int HusFastAmmortering
+        {
+            get { return husFastAmmortering; }
+            set { husFastAmmortering = value; }
+        }
+        private decimal bostadsrättAndelLånVidKöpet;
+        public decimal BostadsrättAndelLånVidKöpet
+        {
+            get { return bostadsrättAndelLånVidKöpet; }
+            set { bostadsrättAndelLånVidKöpet = value; }
+        }
+        private decimal husAndelLånVidKöpet;
+        public decimal HusAndelLånVidKöpet
+        {
+            get { return husAndelLånVidKöpet; }
+            set { husAndelLånVidKöpet = value; }
+        }
     }
 }
