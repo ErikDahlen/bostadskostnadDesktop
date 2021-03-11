@@ -60,5 +60,53 @@ namespace BoendekostnadetDesktop
             get { return värdeökningAktier; }
             set { värdeökningAktier = value; }
         }
+        private decimal hävstångAktier;
+        public decimal HävstångAktier
+        {
+            get { return hävstångAktier; }
+            set { hävstångAktier = value; }
+        }
+        private decimal värdeökningBostadsrätter;
+        public decimal VärdeökningBostadsrätter
+        {
+            get { return värdeökningBostadsrätter; }
+            set { värdeökningBostadsrätter = value; }
+        }
+        private decimal värdeökningHus;
+        public decimal VärdeökningHus
+        {
+            get { return värdeökningHus; }
+            set { värdeökningHus = value; }
+        }
+        private int försäljningBostad;
+        public int FörsäljningBostad
+        {
+            get { return försäljningBostad; }
+            set { försäljningBostad = value; }
+        }
+        private decimal hyresökning;
+        public decimal Hyresökning
+        {
+            get { return hyresökning; }
+            set { hyresökning = value; }
+        }
+        private decimal bostadsrättAvgifthöjning;
+        public decimal BostadsrättAvgifthöjning
+        {
+            get { return bostadsrättAvgifthöjning; }
+            set { bostadsrättAvgifthöjning = value; }
+        }
+        private int bostadsrättUnderhåll;
+        public int BostadsrättUnderhåll
+        {
+            get { return bostadsrättUnderhåll; }
+            set { bostadsrättUnderhåll = value; }
+        }
+        private decimal bostadsrättUnderhållsökning;
+        public decimal BostadsrättUnderhållsökning
+        {
+            get { return bostadsrättUnderhållsökning; }
+            set { bostadsrättUnderhållsökning = value; }
+        }
     }
 }

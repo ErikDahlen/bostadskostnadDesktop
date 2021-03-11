@@ -80,19 +80,19 @@ namespace BoendekostnadetDesktop
             //sätt generella parametrar
             _antalÅr = param.AntalÅr;
             _värdeökningAktier = param.VärdeökningAktier;
-            _hävstångAktier = 0.00M; //ange hur många procents hävstång man tar på sina aktier
-            _värdeökningBostadsrätt = 0.04M;
-            _värdeökningHus = 0.04M;
+            _hävstångAktier = param.HävstångAktier; //ange hur många procents hävstång man tar på sina aktier
+            _värdeökningBostadsrätt = param.VärdeökningBostadsrätter;
+            _värdeökningHus = param.VärdeökningHus;
             _delaSvaretMed = param.DelaSvaretMed; //använd gärna 1, 1000 eller 1000*1000 för att få beloppet i kronor, tusental eller i miljoner
-            _försäljningskostnadBostad = 80 * 1000; //exempelvis mäklare, fina till bostaden osv.
+            _försäljningskostnadBostad = param.FörsäljningBostad; //exempelvis mäklare, fina till bostaden osv.
 
             //sätt parametrar för hyresrätten
             _hyresrätten.Hyra = param.Hyra;
-            _hyresrätten.Hyresökning = 0.02M;
+            _hyresrätten.Hyresökning = param.Hyresökning;
 
             //sätt parametrar för bostadsrätten
             _bostadsrätten.Avgift = param.BostadsrättAvgift;
-            _bostadsrätten.Avgiftsökning = 0.02M;
+            _bostadsrätten.Avgiftsökning = param.BostadsrättAvgifthöjning;
             _bostadsrätten.Inköpspris = param.BostadsrättPris;
             _bostadsrätten.Lån = (int)(_bostadsrätten.Inköpspris * 0.85M);
             _bostadsrätten.Värde = _bostadsrätten.Inköpspris;
@@ -100,8 +100,8 @@ namespace BoendekostnadetDesktop
             _bostadsrätten.FastAmmortering = 3000;
             _bostadsrätten.AmmorteraEnligtAmmorteringsreglerna = true;
             _bostadsrätten.LågLönExtraAmmortering = false;
-            _bostadsrätten.Underhåll = 1000;
-            _bostadsrätten.UnderhållÖkning = 0.02M;
+            _bostadsrätten.Underhåll = param.BostadsrättUnderhåll;
+            _bostadsrätten.UnderhållÖkning = param.BostadsrättUnderhållsökning;
 
             //sätt parametrar för hus
             _hus.Driftkostnad = 3000;

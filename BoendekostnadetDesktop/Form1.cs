@@ -60,6 +60,14 @@ namespace BoendekostnadetDesktop
 
             //Avancerade inställningar generelt och hyresrätt
             param.VärdeökningAktier = HämtaDecimalParameter(tbxVärdeökningAktier.Text.Replace("%", ""), "Värdeökningen på aktier", ref resultat) / 100;
+            param.HävstångAktier = HämtaDecimalParameter(tbxHävstångAktier.Text.Replace("%", ""), "Hävstången på aktier", ref resultat) / 100;
+            param.VärdeökningBostadsrätter = HämtaDecimalParameter(tbxVärdeökningBostadsrätt.Text.Replace("%", ""), "Värdeökningen på bostadsrätter", ref resultat) / 100;
+            param.VärdeökningHus = HämtaDecimalParameter(tbxVärdeökningHus.Text.Replace("%", ""), "Värdeökningen på hus", ref resultat) / 100;
+            param.FörsäljningBostad = HämtaIntParameter(tbxFörsäljningBostad.Text, "Bostadens försäljningskostnad", ref resultat);
+            param.Hyresökning = HämtaDecimalParameter(tbxHyresökning.Text.Replace("%", ""), "Hyresökningen", ref resultat) / 100;
+            param.BostadsrättAvgifthöjning = HämtaDecimalParameter(tbxBostadsrättAvgiftshöjning.Text.Replace("%", ""), "Bostadsrättens avgiftshöjning", ref resultat) / 100;
+            param.BostadsrättUnderhåll = HämtaIntParameter(tbxBostadsrättUnderhåll.Text, "Bostadens underhållskostnad", ref resultat);
+            param.BostadsrättUnderhållsökning = HämtaDecimalParameter(tbxBostadsrättUnderhållsökning.Text.Replace("%", ""), "Bostadsrättens underhållskostnadsökning", ref resultat) / 100;
 
             return resultat;
         }
@@ -128,6 +136,19 @@ namespace BoendekostnadetDesktop
         private void ÅterställInställningar()
         {
             tbxVärdeökningAktier.Text = "7%";
+            tbxHävstångAktier.Text = "0%";
+            tbxVärdeökningBostadsrätt.Text = "4%";
+            tbxVärdeökningHus.Text = "4%";
+            tbxFörsäljningBostad.Text = "80 000";
+            tbxHyresökning.Text = "2%";
+            tbxBostadsrättAvgiftshöjning.Text = "2%";
+            tbxBostadsrättUnderhåll.Text = "1000";
+            tbxBostadsrättUnderhållsökning.Text = "2%";
+        }
+
+        private void Bostadskostnader_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
